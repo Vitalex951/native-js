@@ -81,17 +81,17 @@ console.log(myMap(students, s => ({
 
 // console.log(myMap(students, s => {s.["isStudent"]=true})
 console.log(students.map(s => s.name))
-// function myMap(arr, callback) {
-//     const resultArray = []
-//     for (let i = 0; i < arr.length; i++) {
-//         // получение данных из каждого эл-та исходного массива:
-//         const newData = callback(arr[i])
-//         // добавление данных в новый массив
-//         resultArray[i] = newData
-//     }
-//     return resultArray
-// }
-//
+function myMap(arr, callback) {
+    const resultArray = []
+    for (let i = 0; i < arr.length; i++) {
+        // получение данных из каждого эл-та исходного массива:
+        const newData = callback(arr[i])
+        // добавление данных в новый массив
+        resultArray[i] = newData
+    }
+    return resultArray
+}
+
 // console.log(myMap(students, s => s.name));
 // console.log(myMap(students, s => ({...students[s], isStudent: true  // разобрать почему student[s] просто массив
 // })));
